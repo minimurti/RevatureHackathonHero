@@ -1,0 +1,12 @@
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/config/AwsResourceConfig.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/model/Address.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/exception/CustomerNotFoundException.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/exception/ControllerExceptionHandler.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/model/CustomerImage.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/service/FileArchiveService.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/Application.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/controller/CustomerController.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/exception/FileArchiveServiceException.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/repository/CustomerRepository.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/exception/InvalidCustomerRequestException.java
+/Users/bitch/Documents/GitHub/spring-boot-aws/src/main/java/com/blog/samples/boot/model/Customer.java

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: bitch
+Build-Jdk: 13.0.2
+Implementation-Title: spring-boot-aws
+Implementation-Version: 0.1.0
+Implementation-Vendor-Id: org.springframework
+Implementation-Vendor: Pivotal Software, Inc.
+Created-By: Maven Integration for Eclipse
+
