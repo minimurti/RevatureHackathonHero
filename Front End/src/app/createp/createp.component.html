@@ -1,0 +1,19 @@
+<h3>Create new Team</h3><br>
+
+<form class="example-form">
+    <mat-form-field class="example-form">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" name="pname" #pname >
+      </mat-form-field>
+
+    <form class="example-form">
+      <mat-form-field class="address-form">
+        <mat-label>Description</mat-label>
+        <input matInput type="text" name="description" #description>
+      </mat-form-field><br><br>
+
+<button class="add" mat-raised-button color="primary" type="submit" (click)="add(pname.value, description.value)">Submit</button>
+&nbsp;
+<button class="return" mat-raised-button mat-raised-button color="white" type="submit" (click)="return()">Return</button>
+
+

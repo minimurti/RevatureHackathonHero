@@ -1,0 +1,14 @@
+<h3>Login</h3><br>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" name="username" #username>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" name="password" #password>
+      </mat-form-field>
+  
+<br><br>
+<button class="add" color="primary" mat-raised-button type="submit" (click)="login(username.value, password.value)">Submit</button>

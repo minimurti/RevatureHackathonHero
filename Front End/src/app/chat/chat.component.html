@@ -1,0 +1,47 @@
+<!-- Start : Chat Header  -->
+<!-- <div class="menu">
+    <div class="name">Project Chat</div>
+</div> -->
+<!-- End : Chat Header  -->
+
+<!-- Start : Chat section  -->
+<div class="outer">
+    <div class="container">
+        <ol class="chat" #scrollMe [scrollTop]="scrollMe.scrollHeight" *ngIf="messageList.length > 0">
+            <li [ngClass]="{'self': message.username == username , 'other': message.username != username }" *ngFor="let message of messageList">
+                <div class="msg">
+                    <div class="user">{{ message.username }}</div>
+                    <p> {{ message.messageBody }} </p>
+                    <time>{{ time }}</time>
+                </div>
+            </li>
+        </ol> 
+    </div>
+</div>
+
+
+
+<!-- End : Chat section  -->
+
+<!-- Start : Chat Sending  -->
+<div class="typezone">
+    <form class="example-form">
+      <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+      <button mat-raised-button type="submit" (click)="return()"><i class="fa fa-caret-left fa-2x"></i></button>
+      <mat-form-field class="address-form">
+        <mat-label></mat-label>
+        <textarea matInput
+        [(ngModel)]="messageText"
+        name="messageBody"
+        maxlength="100"
+        #messageBody 
+        (keydown.enter)="add(messageBody.value)">
+        </textarea>
+        <!-- <div #the-count">
+          <span [style.color]="currentcolor" #current">{{characterCount}}</span>
+          <span [style.color]="maxcolor" #maximum">/ 100</span>
+        </div> -->
+       </mat-form-field> 
+    </form>
+  </div>
+     

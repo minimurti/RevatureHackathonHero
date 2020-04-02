@@ -1,0 +1,42 @@
+<h4>Account Details</h4> 
+
+<hr/>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <br>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>{{user.firstName}} {{user.lastName}}</td>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td>{{user.username}}</td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>{{user.password}}</td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <td>{{user.dateOfBirth | date }}</td>
+        </tr>
+        <tr>
+          <td>Skills</td>
+          <td>{{user.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>
+<button class="return" color="white" mat-raised-button type="submit" (click)="return()">Return</button>
+<br><br>
+
+
+
+

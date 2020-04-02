@@ -1,0 +1,34 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3>Team List</h3><br>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered table-hover table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let project of projectList">
+            <td>{{ project.pname }}</td>
+            <td>{{ project.description }}</td>
+            <td>
+                <button mat-raised-button class="add" color="primary"
+                routerLinkActive="active" (click)="addMembers(project.id)">Add Members</button>&nbsp;
+                <button mat-raised-button class="add" color="primary"
+                routerLinkActive="active" (click)="viewMembers(project.id)">View Members</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <button class="return" mat-raised-button color="white" type="submit" (click)="return()">Return</button>
+  <br><br>
+
+  
+  

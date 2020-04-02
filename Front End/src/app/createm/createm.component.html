@@ -1,0 +1,13 @@
+<h3>Create new message</h3><br>
+
+    <form class="example-form">
+      <mat-form-field class="address-form">
+        <mat-label>Message</mat-label>
+        <input matInput type="text" name="messageBody" #messageBody>
+      </mat-form-field><br><br>
+
+<button class="btn btn-primary" type="submit" (click)="add(messageBody.value)">Submit</button>
+&nbsp;
+<button class="btn btn-primary" type="submit" (click)="return()">Return</button>
+
+

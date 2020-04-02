@@ -1,0 +1,41 @@
+<h3>Add Heros to Your Team</h3>
+<h3>Search for users who have your needed skills</h3><br>
+
+<mat-form-field class="example-form">
+  <mat-label>Filter By Powers</mat-label>
+  <input matInput [(ngModel)]="searchText">
+</mat-form-field>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <br>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <!-- <th>Last Name</th> -->
+          <th>Birthday</th>
+          <th>Powers</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userList | filter : searchText">
+          <td>{{ user.username }}</td>
+          <!-- <td>{{ user.lastName }}</td> -->
+          <td>{{ user.dateOfBirth | date }}</td>
+          <td>{{ user.email }}</td>
+          <td><button class="add" mat-raised-button color="primary" 
+            (click)="addUser(user.username)">Recruit</button>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<button class="return" color="white" mat-raised-button type="submit" (click)="return()">Return</button>
+
+

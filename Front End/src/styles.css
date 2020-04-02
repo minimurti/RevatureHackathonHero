@@ -1,0 +1,28 @@
+@import '~font-awesome/css/font-awesome.css';
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+
+html, body { 
+    height: 100%;
+    text-align: center;
+
+
+}
+
+.example-form{
+    padding: 6px;
+}
+
+.address-form{
+    min-width: 365px;
+}
+
+.custom-file{
+    max-width: 230px;
+}
+
+.custom-file-label{
+    text-align: left;
+}

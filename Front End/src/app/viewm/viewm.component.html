@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3>Project messages</h3><br>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let message of messageList">
+            <td>{{ message.username }}</td>
+            <td>{{ message.messageBody }}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <button mat-raised-button type="submit" (click)="return()">Return</button>
+  
+  
